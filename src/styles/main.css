@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 12px;
+  color: #424242;
+}
+
+.header__menu {
+  font-size: 32px;
+  margin: 10px auto;
+  display: block;
+  width: 30px;
+}
+
+button {
+  box-sizing: border-box;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #f99417;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  font-size: 14px;
+  border-bottom: 1px solid white;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: right;
+  line-height: 20px;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #424242;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 5, 0.5), rgba(0, 0, 5, 0.5)), url("../public/images/heros/hero-image_4.jpg");
+  background-position: center;
+}
+
+.hero__inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero__title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.hero_subtitle {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 32px;
+}
+
+.recomended {
+  width: 100%;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.recomended__label {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.list {
+  margin: 32px auto auto;
+  text-align: left;
+}
+.restaurant-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.restaurant-content {
+  padding: 16px;
+}
+
+.restaurant-city {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  border-radius: 5px;
+  background-color: #f99417;
+  padding: 5px 10px 5px;
+  color: white;
+  font-weight: 500;
+}
+
+.restaurant-pic {
+  width: 100%;
+  max-height: 200px;
+}
+
+.restaurant-name {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: auto;
+  transition: 0.3s opacity;
+}
+
+.restaurant-name:hover {
+  opacity: 0.5;
+}
+
+.restaurant-name::after {
+  content: "";
+  margin-top: 5px;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.restaurant-name a {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.restaurant-description {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #f99417;
+  color: black;
+  font-size: 14px;
+  padding: 1.5em;
+  width: 100%;
+  text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background-color: #f21170;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 100px;
+}

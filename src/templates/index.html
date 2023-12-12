@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaca</title>
+    <link rel="preconnect" href="https://restaurant-api.dicoding.dev" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <a href="#content" class="skip-link">Skip to content</a>
+
+    <header class="header">
+      <button id="menu" class="header__menu">☰</button>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="/">Home</a></li>
+        <li class="nav__item"><a href="#">Favorite</a></li>
+        <li class="nav__item"><a href="https://github.com/fadiains">About Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">RESTACA</h1>
+        <h2 class="hero_subtitle">Aplikasi Katalog Restoran</h2>
+      </div>
+    </div>
+
+    <main id="content">
+      <section class="content">
+        <div class="recomended">
+          <h1 class="recomended__label">Rekomendasi Restoran</h1>
+          <div class="list" id="restaurantList"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2023 - Restaca</p>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
